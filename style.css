@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+.preload * {
+    /* fix pour les nav basé sur ff */
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
+/* body */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+    display: grid;
+    background-color: #222;
+    color: #999;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+body>.content {
+    padding-right: 20px;
+    padding-left: 20px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* NAVBAR */
+
+nav {
+    justify-self: center;
+    padding: 4px;
+    margin: 16px;
+    border: 2px solid #22222275;
+    background: #333;
+    border-radius: 12px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Carte */
+
+.carte {
+    margin: auto;
+    padding: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    max-width: 70%;
+    max-width: 500px;
+    max-width: 400px;
+    border-radius: 12px;
+    justify-items: center;
+    display: grid;
+    background-color: #333;
+    border: 2px solid #22222275;
+}
+
+.socials {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.socials>a {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+a,
+a>svg>path {
+    text-decoration: none;
+    color: #777;
+    fill: #777;
+    transition: all 0.2s ease-in-out;
+}
+
+svg {
+    margin-right: 4px;
+}
+
+a:hover,
+a:hover>svg>path {
+    color: #444;
+    fill: #444;
+}
+
+tr>th {
+    text-align: right;
+}
+
+/* Inputs du formulaire */
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 24px;
+}
+
+input,
+select,
+textarea {
+    background: #444;
+    border: 1px solid #22222275;
+    border-radius: 6px;
+    padding: 4px;
+    color: #c1c1c1;
+    transition: all 200ms;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    background: #333;
+    border: 1px solid #222;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background: #444;
+    border: 1px solid #22222275;
+    border-radius: 6px;
+    font-size: large;
+    color: #999;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 46px;
+    transition: all 200ms;
+}
+
+button[type="submit"]:hover {
+    width: 100%;
+    background: #333;
+    border: 1px solid #222222cb;
+    border-radius: 6px;
+    font-size: large;
+    color: #999;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 46px;
+    cursor: pointer;
+}
+
+/* footer */
+.footer {
+    background-color: rgb(63, 63, 63);
+    color: white !important;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 2px;
+}
+
+.footer>a {
+    color: white;
+}
